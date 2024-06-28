@@ -18,6 +18,9 @@ struct ContentView: View {
             List(users) { user in
                 NavigationLink(value: user) {
                     Text(user.name)
+                    .font(.headline)
+                    Text(user.city)
+                    .font(.caption)
                 }
             }
             .navigationTitle("Users")
